@@ -21,8 +21,8 @@ This repository contains a Retrieval-Augmented Generation (RAG) system that proc
 ### Installation
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/multilingual-rag-system.git
-   cd multilingual-rag-system
+   git clone [https://github.com/your-username/multilingual-rag-system.git](https://github.com/nahidn4p/RAG_APP_10MinS)
+   cd RAG_APP_10MinS
    ```
 
 2. **Install Dependencies**:
