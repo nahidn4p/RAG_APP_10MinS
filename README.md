@@ -217,5 +217,34 @@ This repository contains a Retrieval-Augmented Generation (RAG) system that proc
    - Postman:
      
      <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/5f84333a-6f58-4b56-9d3e-e77ccabd7556" />
-  
+     
+3. **Answers to Required Questions**:
+
+1. Text Extraction Method and Issues?
+
+Method: PyPDF2.
+Why: Simple, works for text PDFs.
+Issues: Scanned PDFs need OCR. Bengali text may have encoding errors, fixed by cleaning.
+
+2. Chunking Strategy and Why?
+Strategy: 200-character chunks, 50-character overlap.
+Why: Small chunks find specific details. Overlap keeps context. Good for precise answers.
+
+3. Embedding Model and How It Works?
+Model: paraphrase-multilingual-MiniLM-L12-v2.
+Why: Handles Bengali and English, lightweight.
+How: Turns text into vectors to match similar meanings.
+
+4. Query-Chunk Comparison Method?
+Method: Cosine similarity in Chroma.
+Why: Measures meaning well. Chroma is fast, simple for one PDF.
+
+5. Meaningful Comparison? Vague Queries?
+How: Model aligns languages, small chunks focus answers.
+Vague Queries: May give vague or no answer (e.g., অনুপমের বয়স কত if not in PDF).
+
+6. Results Relevant? Improvements?
+Relevance: Test cases (e.g., শুম্ভুনাথ) work. অনুপমের বয়স কত may fail if info missing.
+Improvements: Smaller chunks (100), better model, add LLM, use OCR, more documents.
+     
   
