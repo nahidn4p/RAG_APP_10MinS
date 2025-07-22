@@ -210,5 +210,7 @@ This repository contains a Retrieval-Augmented Generation (RAG) system that proc
      ```
    - Test with:
      ```bash
-     curl -X POST -H "Content-Type: application/json" -d '{"query":"অনুপমের বয়স কত"}' http://localhost:5000/query
+     curl -X POST http://127.0.0.1:5000/query ^
+     -H "Content-Type: application/json" ^
+     -d "{\"query\": \"অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?\"}"
      ```
