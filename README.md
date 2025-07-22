@@ -15,7 +15,7 @@ This repository contains a Retrieval-Augmented Generation (RAG) system that proc
 ## Setup Guide
 ### Prerequisites
 - Python 3.8+
-- `hsc26_bangla_1st_paper.pdf` (not included due to copyright; place in project directory)
+- `hsc26_bangla_1st_paper.pdf` (included but due to copyright; maybe removed in future)
 - Git
 
 ### Installation
@@ -45,8 +45,7 @@ This repository contains a Retrieval-Augmented Generation (RAG) system that proc
      ```
      - Starts a Flask server on `http://localhost:5000`.
    - **Interactive Mode**:
-     - Comment out `app.run(debug=False, port=5000)` in `rag_api.py`.
-     - Uncomment `run_tests_and_interactive()`.
+     -  `run_tests_and_interactive()`.
      - Run:
        ```bash
        python rag_api.py
