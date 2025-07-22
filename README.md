@@ -214,3 +214,6 @@ This repository contains a Retrieval-Augmented Generation (RAG) system that proc
      -H "Content-Type: application/json" ^
      -d "{\"query\": \"অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?\"}"
      ```
+   - Postman
+     <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/5f84333a-6f58-4b56-9d3e-e77ccabd7556" />
+  
