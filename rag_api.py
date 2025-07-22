@@ -234,5 +234,5 @@ def run_tests_and_interactive():
 # For Colab, run tests and interactive mode
 # For API, run: app.run(debug=False, port=5000)
 if __name__ == "__main__":
-    #run_tests_and_interactive()
     app.run(debug=False, port=5000)
+    run_tests_and_interactive()
